@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         ErrorHelper.LogNullError(currentSceneController, "Scene Controller not found in GameManager! Try checking the GameManager object");
+        
     }
 
     void Update()
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
     public void UpdateSceneController(SceneController newSceneController)
     {
         currentSceneController = newSceneController;
+        
     }
 
     private void HandleSceneController()

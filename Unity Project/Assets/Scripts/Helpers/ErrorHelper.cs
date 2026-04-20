@@ -17,5 +17,10 @@ public class ErrorHelper : MonoBehaviour
             throw new Exception(msg);
         }
     }
+
+    public static void Error(string msg)
+    {
+        Debug.LogError("Error: " + msg);
+    }
     
 }
